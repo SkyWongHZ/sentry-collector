@@ -1,0 +1,42 @@
+{
+  "name": "sentry-collector",
+  "version": "1.0.0",
+  "description": "一个用于收集和处理Sentry错误的工具包",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyWongHZ/sentry-collector.git"
+  },
+  "keywords": [
+    "sentry",
+    "error-collection",
+    "monitoring",
+    "logging"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SkyWongHZ/sentry-collector/issues"
+  },
+  "homepage": "https://github.com/SkyWongHZ/sentry-collector#readme",
+  "dependencies": {
+    "@sentry/react": "^7.64.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4",
+    "eslint": "^8.31.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1"
+  }
+}
